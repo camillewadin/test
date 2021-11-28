@@ -1,77 +1,57 @@
-<html>
-    <head>
-      <link rel = "stylesheet" type = "text/css" href = "style.css">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flexbox Card Grid</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-    </head>
-    <header class="masthead clear">
-      <div class="centered">
-          
-          <div class="site-branding">
-              <h1 class="site-title"> Better Youtube</h1>
-            <p class="yt">Information <a title="Youtube" href="http://Youtube.com">Youtube</a> </p>
-          </div><!-- .site-title -->
-      </div><!-- .centered -->
-  </header><!-- .masthead -->
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<ul class="cards">
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--fence"></div>
+      <div class="card__content">
+        <div class="card__title">Flex</div>
+        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+        <button class="btn btn--block card__btn">Button</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--river"></div>
+      <div class="card__content">
+        <div class="card__title">Flex Grow</div>
+        <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+        <button class="btn btn--block card__btn">Button</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--record"></div>
+      <div class="card__content">
+        <div class="card__title">Flex Shrink</div>
+        <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
+        <button class="btn btn--block card__btn">Button</button>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item">
+    <div class="card">
+      <div class="card__image card__image--flowers"></div>
+      <div class="card__content">
+        <div class="card__title">Flex Basis</div>
+        <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
+        <button class="btn btn--block card__btn">Button</button>
+      </div>
+    </div>
+  </li>
+</ul>
+<!-- partial -->
   
-  <main class="main-area">
-      
-      <div class="centered">
-
-          <section class="cards">
-              
-              <article class="card">
-                  <a href="#">
-                      <picture class="thumbnail">
-                          <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-01.jpg" alt="A banana that looks like a bird">
-                      </picture>
-                      <div class="card-content">
-
-                          <h2>thumbnail 1</h2>
-                          <p>Nom video 1</p>
-                      </div><!-- .card-content -->
-                  </a>
-              </article><!-- .card -->
-
-              <article class="card">
-                  <a href="#">
-                      <picture class="thumbnail">
-                          <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg" alt="Norwegian boller">
-                      </picture>
-                      <div class="card-content">
-                          <h2>thumbnail2</h2>
-                          <p>Nom de video 2</p>
-                      </div><!-- .card-content -->
-                  </a>
-              </article><!-- .card -->
-
-              <article class="card">
-                  <a href="#">
-                      <picture class="thumbnail">
-                          <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-03.jpg" alt="A dinosaur wearing an aluminium jacket">
-                      </picture>
-                      <div class="card-content">
-                        <h2>thumbnail3</h2>
-                        <p>Nom de video 3</p> 
-                      </div><!-- .card-content -->
-                  </a>
-              </article><!-- .card -->
-
-              <article class="card">
-                  <a href="#">
-                      <picture class="thumbnail">
-                          <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-04.jpg" alt="Chocolate filled boller">
-                      </picture>
-                      <div class="card-content">
-                        <h2>thumbnail4</h2>
-                        <p>Nom de video 4</p>
-                      </div><!-- .card-content -->
-                  </a>
-              </article><!-- .card -->
-
-          </section><!-- .cards -->
-         
-      </div><!-- .centered -->
-      
-  </main>
-    
+</body>
 </html>
